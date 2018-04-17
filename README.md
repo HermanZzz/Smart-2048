@@ -1,11 +1,9 @@
 # Smart-2048
 **Solving the game 2048 with different AI algorithms**
 
-
-
 ### Introduction
 
-2048 is a game featuring a 4x4 grid-board with numbered tiles. In each turn, a new tile witheither 2 or 4 appears randomly in an empty slot. The player can then slide all tiles in onedirection (NWSE) until they hit another numbered tile or the wall of the board. Two tiles withequal values will merge upon collision, and the goal is to get a 2048 tile before all slots are filled.
+2048 is a game featuring a 4x4 grid-board with numbered tiles. In each turn, a new tile with either 2 or 4 appears randomly in an empty slot. The player can then slide all tiles in onedirection (NWSE) until they hit another numbered tile or the wall of the board. Two tiles withequal values will merge upon collision, and the goal is to get a 2048 tile before all slots are filled.
 
 In this project we would like to explore and compare different algorithms to solve the 2048 game.
 
@@ -54,7 +52,49 @@ The evaluation function will weigh these heuristics and generate a score for eve
 
 Some literature suggest that deep reinforcement learning could also be used to solve games like 2048, in which the Bellman equation is used iteratively to learn the optimal value function.We hope to implement this with neural network or linear function as the function approximator.The heuristics mentioned above can be reused to define the reward function.
 
-###[Demo]()
+###Demo
 
-We will present a 2048 game board in Python with AI implementing the above algorithms to solve the game automatically.
+#####Environment
 
+```
+C++ compiler
+Python 2.7
+Google Chrome 64.0
+```
+
+#####Execute C++
+
+```
+>>> cd Smart-2048
+>>> ./configure
+>>> make
+```
+
+#####Run the demo
+
+1. **Run in the termial**
+
+   ```
+   >>> python bin/2048
+   ```
+
+
+2. **Run in the Chrome**
+
+- Open Chrome remote debugging model 
+
+  ```
+  >>> Google\ Chrome --remote-debugging-port=9222
+  ```
+
+- Open any [2048](http://2048game.com/) in the Chrome
+
+- Run the demo
+
+  ```
+  >>> python 2048.py -b chrome
+  ```
+
+**Demo screenshot**
+
+![screen1](/Users/Herman/Desktop/AI Project/Smart-2048/img/screen1.png)
