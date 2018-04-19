@@ -52,9 +52,9 @@ The evaluation function will weigh these heuristics and generate a score for eve
 
 Some literature suggest that deep reinforcement learning could also be used to solve games like 2048, in which the Bellman equation is used iteratively to learn the optimal value function.We hope to implement this with neural network or linear function as the function approximator.The heuristics mentioned above can be reused to define the reward function.
 
-###Demo
+### Demo
 
-#####Environment
+##### Environment
 
 ```
 C++ compiler
@@ -62,7 +62,7 @@ Python 2.7
 Google Chrome 64.0
 ```
 
-#####Execute C++
+##### Execute C++
 
 ```
 >>> cd Smart-2048
@@ -70,7 +70,7 @@ Google Chrome 64.0
 >>> make
 ```
 
-#####Run the demo
+##### Run the demo
 
 1. **Run in the termial**
 
@@ -97,4 +97,5 @@ Google Chrome 64.0
 
 **Demo screenshot**
 
-![screen1](/Users/Herman/Desktop/AI Project/Smart-2048/img/screen1.png)
+![screen1](https://raw.githubusercontent.com/HermanZzz/Smart-2048/master/img/screen1.png)
+
