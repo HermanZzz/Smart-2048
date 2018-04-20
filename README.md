@@ -110,15 +110,15 @@ The evaluation function will weigh these heuristics and generate a score for eve
 
   We make a a script for testing the algorithm lots of times with different parameters.You can edit it and change some parameters such as the depth limit and the iteration size.The result will be saved in a txt format and the file name is specified in the main function.After finishing, you could get some statistics from the result.
 
-  1. Rename '2048Test.cpp' -> '2048.cpp'
-  2. Execute and run
+  1. Rename '2048Test.cpp' -> '2048.cpp'.
+  2. Execute and run.
 
       ``` bash
       >>> make
       >>> bin/2048
       ```
 
-  1. Get result
+  1. Get the result.
 
 
 ### Implementation
