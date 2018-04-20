@@ -4,6 +4,7 @@
 ### Introduction
 
 2048 is a game featuring a 4x4 grid-board with numbered tiles. In each turn, a new tile with either '2' or '4' appears randomly in an empty slot. The player can then slide all tiles in onedirection (NWSE) until they hit another numbered tile or the wall of the board. Two tiles withequal values will merge upon collision, and the goal is to get a 2048 tile before all slots are filled.
+
 ![2048](https://raw.githubusercontent.com/HermanZzz/Smart-2048/master/img/2048.png)
 ### Algorithm
 
@@ -111,7 +112,7 @@ You can edit it and change some parameters such as the depth limit and the itera
 The result will be saved in a txt format and the file name is specified in the main function.
 After the finishing, you could get some statistics from the result.
 
-1. rename '2048Test.cpp' -> '2048.cpp'
+1. Rename '2048Test.cpp' -> '2048.cpp'
 
 2. Execute and run
    ``` bash
@@ -150,7 +151,7 @@ It is still impossible to explore every state. So we do the following improvemen
 
 ### Video explanation
 
-If you're interested, please enjoy more in our [YouTube video]
+If you're interested, please enjoy more in our [YouTube video](https://youtu.be/95Y5eVkuGiU)
 
 ### Reference
 
