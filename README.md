@@ -4,7 +4,7 @@
 ### Introduction
 
 2048 is a game featuring a 4x4 grid-board with numbered tiles. In each turn, a new tile with either '2' or '4' appears randomly in an empty slot. The player can then slide all tiles in onedirection (NWSE) until they hit another numbered tile or the wall of the board. Two tiles withequal values will merge upon collision, and the goal is to get a 2048 tile before all slots are filled.
-
+![2048](https://raw.githubusercontent.com/HermanZzz/Smart-2048/master/img/2048.png)
 ### Algorithm
 
 In computer science terminologies, this game is fully observable, stochastic and has a discrete state space of 2^64. So we are considering some possible algorithms to solve this puzzle:
@@ -106,8 +106,19 @@ The evaluation function will weigh these heuristics and generate a score for eve
 ![screen1](https://raw.githubusercontent.com/HermanZzz/Smart-2048/master/img/screen1.png)
 
 3. **Run the configuration model**
+We make a a script for testing the algorithm lots of times with different parameters.
+You can edit it and change some parameters such as the depth limit and the iteration size.
+The result will be saved in a txt format and the file name is specified in the main function.
+After the finishing, you could get some statistics from the result.
 
-- ​
+1. rename '2048Test.cpp' -> '2048.cpp'
+
+2. Execute and run
+   ``` bash
+   make
+   >>>  bin/2048
+   ```
+3. Get result
 
 
 ### Implementation
@@ -131,7 +142,7 @@ As a result, we can perform bitwise operation to extract all rows and columns. S
 
 ##### Prune the search tree
 
-It's still impossible to explore every state. So we do the following improvements to prune the search tree:
+It is still impossible to explore every state. So we do the following improvements to prune the search tree:
 
 - Dynamic depth limits
 - Prunes trees with low probability
